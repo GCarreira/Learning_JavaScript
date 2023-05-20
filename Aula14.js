@@ -17,8 +17,11 @@ for (let i = 0; i < n; i++) {
             maiorPar = lista;
         }
     } else {
-        (lista % 2 === 1 && lista < menorImpar)
-        menorImpar = lista;
-    }
-} print(maiorPar)
-  print(menorImpar)
+        if (menorImpar === 0) {
+            menorImpar = lista;
+        } else if (lista < menorImpar) {
+            menorImpar = lista;
+        }
+    } 
+}print(maiorPar)
+    print(menorImpar)
